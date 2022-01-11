@@ -1,0 +1,31 @@
+CREATE TABLE `sap_employment_information_personal_info_nav_data`
+(
+  `PersonIDExternal`             varchar(20) NOT NULL,
+  `StartDate`                    varchar(80) DEFAULT NULL,
+  `LastName`                     varchar(20) DEFAULT NULL,
+  `BusinessLastName`             varchar(20) DEFAULT NULL,
+  `LastModifiedDateTime`         varchar(80) DEFAULT NULL,
+  `Gender`                       varchar(20) DEFAULT NULL,
+  `EndDate`                      varchar(80) DEFAULT NULL,
+  `DisplayName`                  varchar(20) DEFAULT NULL,
+  `CreatedDateTime`              varchar(80) DEFAULT NULL,
+  `Title`                        varchar(40) DEFAULT NULL,
+  `CreatedOn`                    varchar(80) DEFAULT NULL,
+  `BusinessFirstName`            varchar(20) DEFAULT NULL,
+  `AttachmentID`                 varchar(20) DEFAULT NULL,
+  `PreferredName`                varchar(20) DEFAULT NULL,
+  `Initials`                     varchar(20) DEFAULT NULL,
+  `LastModifiedBy`               varchar(20) DEFAULT NULL,
+  `Script`                       varchar(40) DEFAULT NULL,
+  `LastModifiedOn`               varchar(80) DEFAULT NULL,
+  `FirstName`                    varchar(20) DEFAULT NULL,
+  `Nationality`                  varchar(40) DEFAULT NULL,
+  `CreatedBy`                    varchar(20) DEFAULT NULL,
+  `MiddleName`                   varchar(20) DEFAULT NULL,
+  `NativePreferredLang`          varchar(20) DEFAULT NULL,
+  `Salutation`                   varchar(40) DEFAULT NULL,
+  `MaritalStatus`                varchar(40) DEFAULT NULL,
+    PRIMARY KEY (`PersonIDExternal`),
+    CONSTRAINT `SAPEmploymentInformationPersonalInfoNavData_fk` FOREIGN KEY (`PersonIDExternal`) REFERENCES `sap_employment_information_header_data` (`PersonIDExternal`)
+) ENGINE = InnoDB
+  DEFAULT CHARSET = utf8mb4;
