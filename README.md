@@ -4,8 +4,7 @@ sap-employment-information-sql は、主にエッジアプリケーションに�
 sap-employment-information-sql は、そのままクラウド環境におけるアプリケーションにも、適用可能です。  
 
 ## 前提条件  
-sap-candidate-sql は、SQL の SAP とのデータ連携にあたり、オンプレミス版である（＝クラウド版ではない）SAP SuccessFactors の利用を前提としています。  
-クラウド版APIを利用する場合は、ご注意ください。  
+sap-candidate-sql は、SQL の SAP とのデータ連携にあたり、SAP SuccessFactors API の利用を前提としています。    
 https://api.sap.com/api/ECEmploymentInformation/overview  
 本レポジトリ の sql設定ファイルの内容は、上記URL の API 仕様を前提としています。  
 
